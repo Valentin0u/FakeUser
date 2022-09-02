@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake User Generator</title>
+   <link rel="stylesheet" href="ecf1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<header>
+    <div class="logo" id="logo">
+        <img src="images/logo.png" alt="logo">
+    </div>
+</header>
+<form class="filters" id="myForm">
+    <div class="step">
+        <div class="step1">
+            <fieldset><legend><h3>Etape 1 : nombre de profils</h3></legend>
+                <p>Cliquez sur le nombre de profils que vous souhaitez afficher dans la page.</p>
+            
+                <ul>
+                    <li><input type="radio" id="profileNumber2" name="number" value="2">
+                    <label for="profileNumber2">2</label></li>
+
+                    <li><input type="radio" id="profileNumber4" name="number" value="4">
+                    <label for="profileNumber4">4</label></li>
+
+                    <li><input type="radio" id="profileNumber8" name="number" value="8">
+                    <label for="profileNumber8">8</label></li>
+
+                    <li><input type="radio" id="profileNumber16" name="number"  value="16">
+                    <label for="profileNumber16">16</label></li>
+
+                    <li><input type="radio" id="profileNumber32" name="number"  value="32">
+                    <label for="profileNumber32">32</label></li>
+                </ul>
+            </fieldset>
+        </div>
+        <div class="step2">
+            <fieldset><legend><h3>Etape 2 : choisir le sexe</h3></legend>
+                <p>Choisissez le sexe des profils ou laissez par défaut pour afficher à la fois des profils de femmes ou d'hommes.</p>
+                <ul>
+                    <li><input type="checkbox" id="profileGenderf" name="gender" value="female">
+                    <label for="profileGenderf">Femme</label></li>
+                    <li><input type="checkbox" id="profileGenderm" name="gender" value="male">
+                    <label for="profileGenderm">Homme</label></li>
+                </ul>
+            </fieldset>
+        </div>
+    </div>
+    <div class="actions">
+        <ul>
+            <li> <input type="submit" class='button' id="validate" value='Générer les profils'></li>
+            <li> <input type="button" onClick="refreshPage()" class='btn' id="clearb" value='Effacer'></li>
+        </ul>
+    </div>
+</form>
+<div class="user-list" id="userList">
+
+
+
+
+</div>    
+<script src="ecf1.js"></script>    
+</body>
+</html>
